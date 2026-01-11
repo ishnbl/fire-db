@@ -5,6 +5,22 @@ I came with the idea to do this while building my BYOP project, my project invol
 It stores vectors on disk, uploads them to the GPU, and performs exact L2 nearest-neighbor search using CUDA and cuBLAS.The project uses memory mapping to reduce the amount of ram required
 The DB supports importing vectors from raw numpy files, and gives you the ability to do fast KNN search on it by directly loading it to your GPU Memmory and Doing matrix multiplication.
 The DB is very fast as long as you can fit everything in your GPU VRAM, hence its usefull for people who are dealing with around 1-3 Million Vectors (possible to load on a consumer laptop GPU),however it becomes slower as compared to HNSW style algorithms used by FAISS etc.
+
+##Getting Started
+
+first install nvcc compiler from nvidia on linux using 
+```bash
+sudo apt install nvidia-cuda-toolkit
+```
+
+then clone the repo and inside the directory containing CMakeLists.txt create a new directory named build, then build the project
+```bash
+mkdir build
+cd build
+cmake ..
+make
+./FireDB
+```
 ## Feature
 
 * Exact L2 similarity search
