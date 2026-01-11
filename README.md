@@ -26,6 +26,11 @@ The DB is very fast as long as you can fit everything in your GPU VRAM, hence it
 * GCC / G++ (C++17)
 * cuBLAS (comes with CUDA)
 
+**Things Which I learned**
+*Memory Mapping: I learnt how the operating systems handles memory by creating pages, and lazy loading
+*GPU Architecture: I learnt how GPU's parralalise stuff using threads and blocks
+
+
 ## Project Structure
 
 ```text
