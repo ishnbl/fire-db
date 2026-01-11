@@ -31,6 +31,7 @@ make
 * NumPy vector import
 * Simple CLI
 * Memory Mapping so that the program can lazy load vectors, even if the size of vectors is more than your system RAM.
+* Write ahead logs for recovery in case the database crashes
 ## Requirements
 
 **Hardware**
