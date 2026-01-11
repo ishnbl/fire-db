@@ -39,7 +39,7 @@ make
 **Software**
 * Linux 
 * CUDA Toolkit (11.x or newer)
-* GCC / G++ (C++17)
+* CMake
 * cuBLAS (comes with CUDA)
 
 **Things which I learnt**
